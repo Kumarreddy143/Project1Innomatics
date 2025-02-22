@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innomatics Clone</title>
+    <link href="project.css" rel="stylesheets">
+    <link href="project.js">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .one {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+        }
+
+        .one .enquire {
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+       
+
+        .contact-button {
+            background-color: black;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            box-shadow: 4px 4px 7px rgba(250, 250, 250, 0.974);
+            
+        }
+        
+
+        .contact-button a {
+            color: white;
+            text-decoration: none;
+            border-radius: unset;
+        }
+
+        .phone-icon {
+            color: red;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between center;
+            padding: 15px 20px;
+            border-bottom: 2px solid red;
+        }
+
+        .navbar .logo img {
+            height: 30px;
+        }
+
+        .navbar a:hover{
+            background-color: red;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .pay-now {
+            background-color: black;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .container{
+           
+            display: flex;
+        }
+
+
+        .king{
+          width: 90vw;
+          height: auto;
+        }
+
+        
+        .grid-container {
+            border-radius: 2px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            margin-right: 100px;
+            /* padding-bottom: 3px calc(red); */
+        }
+        .grid-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            width: 200px;
+            height: 200px;
+            /* padding-bottom: 3px calc(red); */
+            
+        }
+        .grid-item img {
+            width: 80px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        mark{
+            color: red;
+            background-color: none;
+        }
+
+        .containers{
+          display: flex;
+          background-color: black;
+          color: white;
+          justify-content: center;
+          
+        }
+        .card{
+          width: 290px;
+          height: 470px;
+          margin: 40px;
+          border-radius: 2%;
+          /* box-sizing: border-box; */
+          border: 3px solid white;
+          text-align: center
+        }
+        .card-img{
+          background-color: blanchedalmond;
+          margin-bottom: 5px;
+          height: 200px;
+          border-radius: 10px;
+        }
+        
+        
+        
+        ul li{
+          margin-bottom: 10px;
+          
+
+        }
+
+        .bro{
+          display: flex;
+    
+        }
+        .bro1{
+          margin: 2%;
+         
+
+        }
+        .bro2{
+          margin: 2%;
+        }
+        .broo{
+          border: 2px solid black;
+          border-radius: 2%;
+          
+        }
+        iframe{
+          border-radius: 6%;
+        }
+
+
+        .navbar2{
+          margin-left: 30%;
+          border-radius: 5px;  
+        }
+        nav{
+          border: 2px solid black;
+          margin-right: 40%;
+          
+        }
+        nav a{
+          text-decoration: none;
+          border: 2px black;
+          padding: 1%;
+          border-radius: 5px;
+        
+          
+         }
+        .phone-icons{
+          background-color: white;
+          padding: 2px;
+          border-radius: 30px;
+
+        }
+
+        .rating{
+          
+          padding: 15%;
+          border: 1px solid black;
+          border-radius: 30px;
+          width: 80vw;
+          margin-left: 10%;
+          height: 600px;
+        }
+
+        .rating img{
+          width: 850px;
+          height: 500px;
+          margin-top: -29%;
+          margin-left: -5%;
+         }
+         .id1, .id2{
+          margin-right: 4%;
+         }
+
+         .bus{
+          display: flex;
+          background-color: white;
+          color: black;
+          justify-content: center;
+          
+         }
+         .bus1{
+          width: 320px;
+          height: 400px;
+          margin: 40px;
+          border-radius: 2%;
+          border: 2px dotted black;
+
+          text-align: center
+         }
+
+         .end{
+          display: flex;
+          background-color: black;
+          color: whitesmoke;
+          height: 650px;
+
+         }
+         .end1{
+          padding: 2%;
+          height: 400px;
+          width: 500px;
+          /* text-align: center; */
+          justify-content: center;
+         }
+         
+         
+        
+         * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif; margin:0;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      width: 100vw;
+      height: 70vh;
+      
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: yellow;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @media only screen and (max-width: 300px) {
+      .prev, .next {font-size: 11px;}
+    }
+
+ </style>
+</head>
+<body>
+
+    <header style="position: fixed;">  
+        <div class="one">
+        <span class="enquire">Enquire Now:</span>
+        <div class="contact-buttons" style="display: flex; padding-left: 0%; gap: 16px; margin-right: 51%;">
+            <div class="contact-button">
+                <a href="tel:9951666670">Hyd:9951666670</a>
+            </div>
+            <div class="contact-button">
+                <a href="tel:9951666671">Pune:<span class="phone-icon">📞</span> 9951666671 </a>
+            </div>
+            <div class="contact-button">
+                
+                <a href="tel:9951666672">Bengaluru:<span class="phone-icon">📞</span> 9951666672</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="navbar"  style="background-color: white;">
+        <div class="logo">
+            <img src="https://www.innomatics.in/wp-content/uploads/2023/01/Innomatics-Logo1.png" alt="Innomatics Logo" style="margin-left: 5px; height: 60px; width: 500px;"> <!-- Replace with actual logo -->
+        </div>
+        <div>
+        <ul class="nav-links" style="margin-left: 40px; height: 50px;">
+            <li><a href="#">Home</a></li>
+            <li>
+            <select>
+                <a href="#">
+                    <option name="Courses">Courses</option>
+                <option title="datascience">DataScience</option>
+                <option title="fullstackdevelopment">Fullstackdevelopment</option>
+                <option title="digitalmarkiting">DigitalMarkiting</option>
+                <option title="amazonwebservice">AmazonWebService</option></a>
+            
+            </select></li>
+            <li><a href="#">ITScholarsProgram</a></li>
+            <li>
+                <select name="Internship">
+                    <a href="#">
+                        <option name="internship">Internship</option>
+                    <option title="">FreeFull-stackInternship</option>
+                    <option title="">FreeGenerativeAIInternship</option>
+                    <option title="">FreeDaataScienceInternship</option>
+                    <option title="">DataScienceSummerInternship</option></a>
+                </select></li>
+                <li>
+                    <select name="About">
+                        <a href="#">
+                            <option name="about">About</option>
+                        <option title="">AboutUs</option>
+                        <option title="">Placements</option>
+                        <option title="">Partnerwithus</option>
+                        <option title="">Contactus</option></a>
+                        <option title="">Blog</option></a>
+                        <option title="">Reviews</option></a>
+                        <option title="">Gallery</option></a>
+                    </select></li>
+                    <li>
+                        <select name="Events">
+                            <a href="#">
+                                <option name="">Events</option>
+                            <option title="">5DaysAIBootcamp</option>
+                            <option title="">FreeDatascienceWebiner</option>
+                            <option title="">CampusAmbassador</option>
+                            </a>
+                        </select></li>
+        <div class="pay-now">
+            ₹ Pay Now
+        </div>
+    </div>
+    
+</header><br><br><br><br><br><br><br>
+
+ 
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="img1.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="img2.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">  
+      <img src="img3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="img4.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+
+    <div>
+      <span onclick="currentSlide(1)"></span> 
+      <span onclick="currentSlide(2)"></span> 
+      <span onclick="currentSlide(3)"></span>
+      <span onclick="currentSlide(4)"></span>  
+    </div>
+    </div>
+    <br>
+
+
+    <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slides[slideIndex - 1].style.display = "block";  
+  }
+</script><br>
+    
+<div class="container">
+   <div class="king" style="margin-right: 15%; margin-left: 2%;">
+       <h1>We just don’t train,<br>
+        We transform the careers</h1><br>
+       <p style="text-align: justify;"><b>Innomatics Research Labs</b> is a pioneer in <b>“Transforming Careers and Lives”</b> of individuals in the Digital Space by catering advanced training on <span style="color: red;"><b>NASSCOM Future skills prime Certified Data Science</b></span>,<b> Python, Predictive Analytics Modeler, Machine Learning, Artificial Intelligence (AI), Generative AI</b>, <span style="color: red;"> Full-stack web development</span><b> and Career Launching program</b> for students who are willing to showcase their skills in the competitive job market with valuable credentials, and also can complete courses with a certificate.</p>
+        <br>
+        <h3 style="color: red;">NASSCOM Futureskills Prime Registered Business Partner</h3><br>
+        <p style="text-align: justify;">As an authorized <b>NASSCOM FutureSkills Prime Training Partner</b> dedicated to providing practical and real-world learning experiences. Our training includes case studies and business challenges to ensure job-ready skills. We also organize regular <b>hackathons, workshops,</b> and <b> meetups</b> to enhance learning and productivity. With a dedicated placement team, we partner with over <b>100 companies</b> to match them with skilled professionals, helping businesses grow while shaping successful careers.</p>
+        <br>
+        <h5 style="color: red;">Best Edtech company</h5>
+         <br>
+         <p style="display: block;">Recognized by <b>Times of India</b> as the Best Training Institute in Hyderabad for Data Science & Digital Marketing, we have trained and placed <b>10,000</b>+ students. With <b>350</b>+ batches, <b>70</b>+ hackathons, <b>500</b>+ industry experts, <b>500</b>+ webinars, and <b>500</b>+ hiring partners, we focus on practical learning and skill development through advanced classrooms and modern training methods.</p><br>
+        <button style="background-color: red; color: white;padding: 2px; border-radius: 10px; width: 120px; height: 50px;">
+          <a href="https://www.innomatics.in/about-us-innomatics-research-labs/;" style="text-decoration: none; color: white;">View more</a>
+        </button>
+    
+        </div>
+
+    
+
+    <div class="grid-container">
+        <h2 style="color: rgb(73, 81, 110);">waht we are?</h2><br>
+        <div class="grid-item"><img src="hicon.jpg" alt="icon"> Global Leaders in training</div>
+        <div class="grid-item"><img src="cicon.webp" alt="icon"> Practical oriented approach</div>
+        <div class="grid-item"><img src="sicon.png" alt="icon"> Hands-on projects & Internship</div>
+        <div class="grid-item"><img src="ricon.png" alt="icon"> 100% Placement Assistance</div>
+    </div>
+  </div><br><br>
+
+  <h1 style="justify-content: center; text-align: center; color: white; background-color: black;">Trending Courses of 2025</h1>
+  <section class="containers">
+    
+         <div class="card">
+            <div class="card-img eye"> <img src="ds1.webp" style="width: 285px; height: 200px; border-radius: 5px;"></div>
+            <h3>NASSCOM Futureskills Prime Certified Data Science</h3><br>
+            <p>This is a great choice for tech geeks, students, working professionals and aspiring data scientists who want to upskill and build a better foundation is the stream of Data Science.</p><br>
+            <a href="https://www.innomatics.in/advanced-data-science-training-in-hyderabad/" style="background-color: black; color: white; text-decoration: none; border: 2px solid white; width: 30px; height: 30px; border-radius: 5px; padding: 2%;">ReadMore ></a>
+          </div>
+         <div class="card">
+          <div class="card-img fsd"><img src="fsd.webp" style="width: 285px; height: 200px; border-radius: 5px;"></div>
+          <h3>Full Stack Development</h3><br>
+          <p>Learn the right skills to break into a development career & advance yourself as a full-stack Developer. It includes Frontend, Backend, databases, debugging & testing.</p><br><br>
+          <a href="https://www.innomatics.in/full-stack-web-development-course-with-job-assistance/" style="background-color: black; color: white; text-decoration: none; border: 2px solid white; width: 30px; height: 30px; border-radius: 5px; padding: 2%;">ReadMore ></a>
+        </div>
+         <div class="card">
+           <div class="card-img gai"><img src="gai.webp" style="width: 285px; height: 200px; border-radius: 5px;"></div>
+           <h3>Generative AI</h3><br>
+           <p>Generative AI Course at Innomatics is perfect for students, job seekers, entrepreneurs, and professionals who want to learn the latest AI tools and skills to grow in their careers.</p><br><br>
+           <a href="https://www.innomatics.in/advanced-generative-ai-course-in-hyderabad/" style="background-color: black; color: white; text-decoration: none; border: 2px solid white; width: 30px; height: 30px; border-radius: 5px; padding: 2%;">ReadMore ></a>
+          
+          </div>
+   </section><br>
+
+   <section class="bro">
+    <div class="bro1" style="margin-left: 10%;">
+      <h2>Advantages of training at Innomatics</h2><br>
+      <div class="broo">
+      <ul>
+        <li>Flexible Online Live and Classroom Training</li>
+        <li>100% Internship guarantee program</li>
+        <li>Dedicated Placement vertical</li>
+        <li>Mastery level certifications that are globally accepted</li>
+        <li>Backup Classes & Lifetime LMS access</li>
+        <li>Completely Practical Oriented Approach</li>
+        <li>Hands-on training on the capstone projects</li>
+        <li>Bi-weekly connects from industry experts</li>
+        <li>Domain Teach back and Reverse Presentations</li>
+        <li>Free Technical Support & Individual Career Counselling</li>
+        <li>Expert mentoring Weekly Tests & Assignments</li>
+        <li>Mock-up Exams, and Interviews</li>
+        <li>Meet-ups, Workshops, Hackathons & Conferences</li>
+        <li>Exclusive programs for Non-IT professionals</li>
+      </ul>
+    </div>
+    </div>
+    <div class="bro2">
+      <h2>Let’s Watch a Video Bite From Our Institute</h2><br>
+      <iframe width="590" height="315" src="https://www.youtube.com/embed/OKUFrW40xyI?si=HwI4nb2m7aev6-g1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+    <a href="https://www.youtube.com/channel/UC9G7o2iVkKJDhquyCT7Va2g" style="text-decoration: none; background-color: white; color: black; border: 2px solid red; padding: 2%; border-radius: 15px; margin-left: 35%;">Watch more videos></a>
+    </div>
+
+   </section><br><br>
+
+   <div class="navbar2">
+    <h2 style="text-align: center; margin-right: 42%;">Why People Choose Our Training</h2><br>
+    <nav style= "padding: 1%; border-radius: 45px;">
+      <a href="bm1.png" style="background-color: rgb(184, 104, 104); color: white; border-radius: 20px; display: inline-block; margin: 2px;  gap: 20px;">Expert trainers</a>
+      <a href="bm2.png" style="background-color: rgb(184, 104, 104); color: white; border-radius: 20px; display: inline-block; margin: 2px;  gap: 20px;">Capstone Projects</a>
+      <a href="bm3.png" style="background-color: rgb(184, 104, 104); color: white; border-radius: 20px; display: inline-block; margin: 2px;  gap: 20px;">Inhouse Internship</a>
+      <a href="bm4.png" style="background-color: rgb(184, 104, 104); color: white; border-radius: 20px; display: inline-block; margin: 2px;  gap: 20px;">Placements</a>
+    </nav>
+    
+   </div><br>
+
+   <div class="phone">
+    <nav style="display: flex; background-color: black; width: 100vw; height: 80px; text-align: center; justify-content: center;">
+    <span style="color: white; margin-top: 25px; margin-right: 25%;"><h1>Meet our experts</h1></span>
+    <div class="call" style="margin-top: 25px;">
+      <a href="tel:9951666670" style="color: white; background-color: red;  padding: 15px;"><span class="phone-icons">📞</span> 9951666670</a>
+      </div>
+    </nav>
+   </div><br><br>
+
+
+   <div class="slider">
+    <h2 style="text-align: center; justify-content: center; display: flex;">A few reviews from our students</h2><br><br>
+      <figure>
+      
+          <div class="rating">
+               <img src="rate1.png">
+          </div>
+          <div class="rating">
+              <img src="rate2.png">
+          </div>
+          <div class="rating">
+             <img src="rate3.png">
+          </div>
+          <div class="rating">
+             <img src="rate4.png">
+          </div>
+          <div class="rating">
+              <img src="rate5.png">
+          </div>
+
+        
+         
+         <a class="fw" onclick="plusSlidess(1)" style="margin-left: 90%; display: block; margin-top: -23%;"><b>❯</b></a>
+         <a class="bw" onclick="plusSlidess(-1)" style=" margin-left: 10%;display: block;"><b>❮</b></a>
+      
+
+    <div>
+      <span onclick="currentSlide(1)"></span> 
+      <span onclick="currentSlide(2)"></span> 
+      <span onclick="currentSlide(3)"></span>
+      <span onclick="currentSlide(4)"></span>  
+    </div>
+
+    <script>
+      let sliderIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlidess(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("rating");
+        
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script><br>
+
+  </figure>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  <div>
+    <a href="https://www.innomatics.in/reviews-testimonials-of-innomatics-students/" style="text-align: center; justify-content: center; padding: 10px; border-radius: 10px; background-color: black; color: white; margin-left: 45%; text-decoration: none;">Read More ></a>
+  </div><br><br>
+   <h2 style="text-align: center; justify-content: center;">Here Are Some Of Our Success Stories</h2>
+  <div class="ids" style="display: flex; margin-left: 18%;">
+    <div class="id1">
+      <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Aaesha_Azeemuddin-400x516.jpg" style="height: 300px; width: 200px; margin: 10%; border: 1px solid black; border-radius: 9%;">
+    </div>
+    <div class="id1">
+      <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Alladi_Ranjith-400x516.jpg" style="height: 300px; width: 200px; margin: 10%; border: 1px solid black; border-radius: 9%;">
+    </div>
+    <div class="id1">
+      <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Cherukupalli_Indhu-400x516.jpg" style="height: 300px; width: 200px; margin: 10%; border: 1px solid black; border-radius: 9%;">
+    </div>
+    <div class="id1">
+      <img src="https://www.innomatics.in/wp-content/uploads/2024/11/G._Venkata_Mareswararao-400x516.jpg" style="height: 300px; width: 200px; margin: 10%; border: 1px solid black; border-radius: 9%;">
+    </div>
+  </div>
+  <div class="idss" style="display: flex; margin-left: 18%;">
+    <div class="id2">
+      <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Guruprasad_Madhusudhan_Kamtam-400x516.jpg" style="height: 300px; width: 200px; margin: 10%; border: 1px solid black; border-radius: 9%;">
+    </div>
+    <div class="id2">
+      <img src="https://www.innomatics.in/wp-content/uploads/2024/11/P_Sri_Harsha-400x516.jpg" style="height: 300px; width: 200px; margin: 10%; border: 1px solid black; border-radius: 9%;">
+    </div>
+    <div class="id2">
+      <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Parla_Ram_Charan-400x516.jpg" style="height: 300px; width: 200px; margin: 10%; border: 1px solid black; border-radius: 9%;">
+    </div>
+    <div class="id2">
+      <img src="https://www.innomatics.in/wp-content/uploads/2024/11/Venkata_Surya_Vishal_Ganti-400x516.jpg" style="height: 300px; width: 200px; margin: 10%; border: 1px solid black; border-radius: 9%;">
+    </div> 
+  </div>   
+  </div><br><br>
+
+  <h2 style="text-align: center; justify-content: center;">Read Latest Business News & Blog updates</h2><br><br>
+  <section class="bus">
+     <div class="bus1">
+       <div class="bus2"><a href="https://www.innomatics.in/oops-concepts-in-python/"><img src="https://www.innomatics.in/wp-content/uploads/2023/08/banner-1-1-400x250.jpg" style="width: 320px; height: 200px;border: 2px solid black; border-radius: 5px;"></a></div>
+       <h3>OOPS Concepts in Python: Part 1</h3><br>
+       <p> Class, Objects, Constructor, Methods in Python :...</p><br>
+       </div>
+    <div class="bus1">
+     <div class="bus2"><a href="https://www.innomatics.in/applications-of-data-science-in-todays-fast-world/"><img src="https://www.innomatics.in/wp-content/uploads/2023/04/Real-world-Applications-of-Data-Science-400x250.png" style="width: 320px; height: 200px; border-radius: 5px;"></a></div>
+     <h3>Real-world Applications of Data Science in Today’s Fast-paced Environment</h3><br>
+     <p>Data science is a field that has emerged as an...</p><br><br>
+     </div>
+    <div class="bus1">
+      <div class="bus2"><a href="https://www.innomatics.in/why-should-you-join-in-innomatics/"><img src="https://www.innomatics.in/wp-content/uploads/2021/10/web-site-blog-1-1-400x250.jpg" style="width: 320px; height: 200px; border-radius: 5px;"></a></div>
+      <h3>Why should you join Innomatics?</h3><br>
+      <p>At Innomatics we believe in looking at the...</p><br><br>
+     </div>
+
+     
+</section>
+<a href="https://www.innomatics.in/why-should-you-join-in-innomatics/"><h6 style="margin-left: 15%; color: skyblue;"><< older Entries</h6></a><br>
+
+<section class="end">
+  <div class="end1" style="margin-right: 10%;">
+    <div class="end2"> <img src="https://www.innomatics.in/wp-content/uploads/2023/01/innomatics-footer-logo.png" style="width: 450px; height: 100px; border-radius: 5px;"></div><br>
+    
+    <p> A leading training institute, Innomatics Research Labs offers courses in areas such as NASSCOM Futureskills Prime Certified Data Science, Python, AI, Data Analytics, Full Stack Development, and Generative AI. Our practical training is designed meticulously to meet industry needs and provide valuable certification upon completion, empowering individuals to excel in their careers.
+
+    </p><br>
+    <a href="https://www.linkedin.com/school/innomatics-research-labs/posts/?feedView=all"><img src="linkedin icon.jpeg" style="height: 30px; width: 30px;"></a>
+    <a href="https://www.facebook.com/innomaticshyd"><img src="facebook icon.png" style="height: 30px; width: 30px;"></a>
+    <a href="https://www.instagram.com/innomatics_research_labs/"><img src="insta icon.jpeg" style="height: 30px; width: 30px;"></a>
+    <a href="https://x.com/i/flow/login?redirect_after_login=%2Finnomaticshyd"><img src="x icon.png" style="height: 30px; width: 30px;"></a>
+    <a href="https://www.youtube.com/c/InnomaticsResearchLabs"><img src="youtube icon.png" style="height: 25px; width: 30px;"></a>
+    
+    <br>
+    </div>
+ <div class="end1">
+  <h4 style="color: red;">Courses</h4><br><br><br>
+  <ul type="none">
+    <a href="https://www.innomatics.in/advanced-data-science-training-in-hyderabad/" style="text-decoration: none; color: white;"><li style="margin-bottom: 5%;">Data Science</li></a>                                            
+    <a href="https://www.innomatics.in/online-data-science-course/" style="text-decoration: none; color: white;"><li style="margin-bottom: 5%;">Online Data Science</li></a>
+    <a href="https://www.innomatics.in/advanced-generative-ai-course-in-hyderabad/" style="text-decoration: none; color: white;"><li style="margin-bottom: 5%;">Advanced Generative AI</li></a>
+    <a href="https://www.innomatics.in/full-stack-web-development-course-with-job-assistance/" style="text-decoration: none; color: white;"><li style="margin-bottom: 5%;">Full Stack Web Developer</li></a>
+    <a href="https://www.innomatics.in/digital-marketing-course-training-hyderabad/" style="text-decoration: none; color: white;"><li style="margin-bottom: 5%;"> Digital Marketing</li></a>
+    <a href="https://www.innomatics.in/placements/" style="text-decoration: none; color: white;"><li style="margin-bottom: 5%;">Placements</li></a>
+    <a href="https://www.innomatics.in/partner-with-us/" style="text-decoration: none; color: white;"><li style="margin-bottom: 5%;">Partner with us</li></a>
+    <a href="https://www.innomatics.in/privacy-policy/" style="text-decoration: none; color: white;"><li style="margin-bottom: 5%;">Privacy Policy</li></a>
+
+  </ul>
+  </div>
+ <div class="end1">
+   <h3 style="color: red;">Contact Us:</h3><br>
+   <h4 style="margin-bottom: 2%;"><span><img src="loc2.jpg" style="width: 30px; height: 30px;"></span>  Kukatpally — Hyderabad</h4>
+   <p>#205, 2nd Floor, Fortune Signature, Near JNTU Metro Station, Kukatpally, Hyderabad, Telangana 500085
+    Call us : +91-9951666670</p><br>
+
+    <h4 style="margin-bottom: 2%;"><span><img src="loc2.jpg" style="width: 30px; height: 30px; border-radius: 5%;"></span>  Pune </h4>
+   <p> 
+    2nd Floor, Sai Sayaji Apartment, 201 Paud Rd, beside VANAZ Metro, above Bata showroom, Ramkrishna Paramhans Nagar, Kothrud, Pune, Maharashtra 411038
+    Call us : +91-9951666671</p><br>
+
+    <h4 style="margin-bottom: 2%;"><span><img src="loc2.jpg" style="width: 30px; height: 30px;"></span>  Bengaluru</h4>
+   <p>
+    NO.576/B, 3rd FLOOR, Swetha Arcade, Service Road, 100 FT ROAD, 6TH SECTOR, Hsr Layout, Bengaluru, Karnataka 560068
+    +91-9951666672</p><br>
+
+    <h4 style="margin-bottom: 2%;"><span class="phone-icon">📞</span>  Phone/Whatsapp:</h4>
+   <p>+91-9951666670 / +91-9951666671 
+     +91-9951666672</p><br>
+     
+     <h4 style="margin-bottom: 2%;"><span><img src="mail.png" style="width: 30px; height: 30px; border-radius: 40%;"></span>
+      Email Us: Admissions@innomatics.in</h4>
+   
+  </div>
+
+  </section>
+  <div>
+    <p style="background-color: rgb(102, 98, 98); text-align: center; justify-content: center; padding: 1%; color: white;">© 2024 Innomatics Research Labs Pvt Ltd, All rights reserved.</p> 
+    <a href="https://www.innomatics.in/register-now/" style="background-color: red; color: white; text-decoration: none; padding: 1%; border-radius: 10px; margin-left: 90%;">Register Now</a>
+  </div>
+  
+</body>
+</html>
